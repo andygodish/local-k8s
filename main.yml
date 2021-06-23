@@ -6,6 +6,7 @@
     - vars/main.yml
 
   pre_tasks:
+    - include_tasks: tasks/supplemental-installations.yml
     - include_tasks: tasks/vagrant-setup.yml
 
   roles:
