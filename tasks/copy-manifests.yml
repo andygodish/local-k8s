@@ -1,0 +1,6 @@
+---
+- name: Copy Keycloak manisfest
+  copy: 
+    src: /Users/andy.godish/repos/local-k8s/keycloak/
+    dest: /home/vagrant
+  when: inventory_hostname == 'kube1'

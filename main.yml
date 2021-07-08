@@ -7,6 +7,7 @@
 
   pre_tasks:
     - include_tasks: tasks/supplemental-installations.yml
+    - include_tasks: tasks/copy-manifests.yml
     - include_tasks: tasks/vagrant-setup.yml
 
   roles:

@@ -23,6 +23,14 @@ spec:
           value: admin
         - name: PROXY_ADDRESS_FORWARDING
           value: "true"
+        - name: DB_VENDOR
+          value: postgres
+        - name: DB_ADDR
+          value: postgres.default.svc
+        - name: DB_USER
+          value: keycloak
+        - name: DB_PASSWORD
+          value: password
         image: quay.io/keycloak/keycloak:14.0.0
         name: keycloak
         ports:
